@@ -1,0 +1,87 @@
+body {
+  background: url('/bg.jpg');
+  background-size: cover;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  margin: 0;
+  font-family: Arial;
+}
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: rgba(255,255,255,0.85);
+  padding: 20px;
+  font-weight: bold;
+}
+.sidebar a {
+  display: block;
+  margin: 15px 0;
+  color: #111;
+  text-decoration: none;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+}
+.navbar input {
+  padding: 8px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.stats-grid {
+  display: flex;
+  gap: 20px;
+}
+.stats-card {
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 15px;
+  width: 200px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  gap: 20px;
+}
+.product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.product-card img {
+  width: 180px;
+}
+.stats-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.stats-card {
+  background: rgba(255,255,255,0.15);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  width: 200px;
+}
