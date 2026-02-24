@@ -1,4 +1,5 @@
 // src/components/SalesChart.jsx
+import React from "react";
 import { salesData } from "../data/salesData";
 
 const SalesChart = () => {

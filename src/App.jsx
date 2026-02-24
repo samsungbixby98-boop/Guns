@@ -1,23 +1,25 @@
-import { Routes, Route } from "react-router-dom";
-import Sidebar from "./components/Sidebar";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
-import Contact from "./pages/Contact";
 import "./App.css";
 
-export default function App() {
+function App() {
+  const basename = import.meta.env.DEV ? "/" : "/Inventory";
+
   return (
-    <div className="app-layout">
-      <Sidebar />
-      <div className="main-content">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
-    </div>
+    <BrowserRouter basename={basename}>
+      <Navbar />
+
+      <Routes>
+        {/* IMPORTANT FIX */}
+        <Route index element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="products" element={<Products />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
+export default App;

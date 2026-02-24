@@ -1,12 +1,11 @@
-import StatsCards from "../components/StatsCard";
-import SalesChart from "../components/SalesChart";
-
-export default function Home() {
+import React from "react";
+function Home() {
   return (
-    <div>
-      <h2>Dashboard</h2>
-      <StatsCards />
-      <SalesChart />
+    <div className="home">
+      <h1>Welcome to Inventory Dashboard</h1>
+      <p>Manage your weapons inventory easily.</p>
     </div>
   );
 }
+
+export default Home;
