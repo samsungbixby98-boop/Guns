@@ -28,7 +28,7 @@ const products = [
   },
   {
     id: 5,
-    name: "UMP45 Submachine Gun",
+    name: "SCAR-L Assault Rifle",
     price: 2500,
     image: asset("scar.webp")
   },
